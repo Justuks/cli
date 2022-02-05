@@ -38,15 +38,15 @@ let windOnFuel = document.getElementById('fuel-gauge')
 
 function up(){
     if(wind === 30)return false
-   console.log(display.innerHTML = ++ wind)
-   console.log(windOnFuel.innerHTML = fuel ++)
+   console.log(display.innerHTML = ++ wind);
+   console.log(windOnFuel.innerHTML = fuel ++);
 }
 up()
 
 function down(){
     if(wind < 1)return false
-    console.log(display.innerHTML = --wind)
-    console.log(windOnFuel.innerHTML = fuel --)
+    console.log(display.innerHTML = -- wind);
+    console.log(windOnFuel.innerHTML = -- fuel);
 }
 down()
 
@@ -55,13 +55,16 @@ let rpmDisplay = document.getElementById('rpm-display')
 
 function high(){
     if(rpm === 2400)return false
-    console.log(rpmDisplay.innerHTML  = rpm += 100)
+    console.log(rpmDisplay.innerHTML  = rpm += 100);
+    console.log(windOnFuel.innerHTML = fuel += 0.5);
 }
 high()
 
 
 function low(){
     if(rpm === 600)return false
-     console.log(rpmDisplay.innerHTML = rpm -= 100)
+     console.log(rpmDisplay.innerHTML = rpm -= 100);
+     console.log(windOnFuel.innerHTML = fuel -= 0.5)
+
 }
 low()
