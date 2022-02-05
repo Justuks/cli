@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
 }
 /*image has a compass there, with a shadow and brass edges, will try to replicate that*/
-#header-div {
+.headers {
         border: 2px solid #a87b32;
         background-color: black;
         margin-top: 30px;
@@ -61,3 +61,22 @@ body {
     .box {
         height: 25px;
     }
+
+    /*style second html page*/
+#screen {
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid #a87b32;
+    width: 50%; 
+    margin: auto;
+    margin-top: 25px;
+    height: 75vh;
+    box-shadow: -10px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 300;
+}

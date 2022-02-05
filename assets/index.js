@@ -15,11 +15,46 @@ button.addEventListener('click', function () {
         let answers = document.querySelectorAll('#test input');
         let i = 0;
         for (let input of answers) {
-                if (input.value ===correctAnswers[i]) {
-                        alert('good')
+                if (input.value === correctAnswers[i]) {
+                        location.replace('range.html')
                 } else {
                         document.getElementById('header-text').innerHTML = 'Please, try again.'
                 }
                 i++
         }
 })
+
+//script for range finder page below
+let wind = 0
+let display = document.getElementById('wind-display')
+let fuel = 5
+let windOnFuel = document.getElementById('fuel-gauge')
+
+function up(){
+    if(wind === 30)return false
+   console.log(display.innerHTML = ++ wind)
+   console.log(windOnFuel.innerHTML = fuel ++)
+}
+up()
+
+function down(){
+    if(wind < 1)return false
+    console.log(display.innerHTML = --wind)
+}
+down()
+
+let rpm = 500
+let rpmDisplay = document.getElementById('rpm-display')
+
+function high(){
+    if(rpm === 2400)return false
+    console.log(rpmDisplay.innerHTML  = rpm += 100)
+}
+high()
+
+
+function low(){
+    if(rpm === 600)return false
+     console.log(rpmDisplay.innerHTML = rpm -= 100)
+}
+low()
