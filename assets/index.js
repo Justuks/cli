@@ -60,7 +60,7 @@ function high(){
     if(rpm === 2400)return false
     console.log(rpmDisplay.innerHTML  = rpm += 100);
     console.log(windOnFuel.innerHTML = fuel += 0.5);
-    console.log(displayRange.innerHTML = -- range);
+    console.log(displayRange.innerHTML = range --);
 }
 high()
 
