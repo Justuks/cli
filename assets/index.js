@@ -15,7 +15,7 @@ button.addEventListener('click', function () {
         let answers = document.querySelectorAll('#test input');
         let i = 0;
         for (let input of answers) {
-                if (input.value == correctAnswers[i]) {
+                if (input.value ===correctAnswers[i]) {
                         alert('good')
                 } else {
                         document.getElementById('header-text').innerHTML = 'Please, try again.'

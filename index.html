@@ -21,27 +21,29 @@
     </header>
     <!--start to work on main accsess questionaire-->
     <div id="test">
-        <p>What is the left - hand side called on a ship?</p>
+        <form method="post">
+        <label for="question1">What is the left - hand side called on a ship?</label>
         <br>
-        <input class="box" type="text">
-        <br>
-        <br>
-        <p>There are...... degrees on a compass.</p>
-        <br>
-        <input class="box" type="text">
+        <input required name="answer1" class="box" type="text">
         <br>
         <br>
-        <p>Nautical Mile is _ . _ _ km.</p>
+        <label for="question2">There are...... degrees on a compass.</label>
         <br>
-        <input class="box" type="text">
+        <input required name="answer2" class="box" type="text">
         <br>
         <br>
-        <p>The Knot is equal to one .......?</p>
+        <label for="question3">Nautical Mile is _ . _ _ km.</label>
         <br>
-        <input class="box" type="text">
+        <input required name="answer3" class="box" type="text">
+        <br>
+        <br>
+        <label for="question4">The Knot is equal to one .......?</label>
+        <br>
+        <input required name="answer4" class="box" type="text">
         <br>
         <!--will add check button here below to verify answers-->
         <button class="btn" id="check">Verify</button>
+        </form>
 
     </div>
     <script src="assets/index.js"></script>
