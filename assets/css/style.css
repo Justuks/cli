@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard&family=Lato:wght@300&family=Lexend+Deca:wght@100;400&family=Roboto+Mono&family=Share&family=Source+Serif+Pro&display=swap');
+/*start my styling below*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 body {
-    color:brown
+    font-family: play, sans-serif;
+    background-color: black;
+    color: #f5f5f5;
+    background-image: url("../images/pexels-ylanite-koppens-697662.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
