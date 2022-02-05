@@ -12,6 +12,7 @@ body {
     background-image: url("../images/pexels-ylanite-koppens-697662.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 /*image has a compass there, with a shadow and brass edges, will try to replicate that*/
 #header-div {
@@ -44,11 +45,15 @@ body {
     width: 50%; 
     margin: auto;
     margin-top: 50px;
-    height: 70vh;
+    height: 75vh;
     box-shadow: -10px 25px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: large;
+    }
+    .box {
+        height: 25px;
     }
