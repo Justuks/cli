@@ -9,14 +9,18 @@ document.getElementById('press').onclick = function () {
 }
 
 //work on questionnaire/make an array with correct answers
+
 let correctAnswers = ['port', 360, 1.85, 'nautical mile'];
 let button = document.querySelector('#check');
 button.addEventListener('click', function () {
         let answers = document.querySelectorAll('#test input');
         let i = 0;
         for (let input of answers) {
+
+                //intend to reveal range finder box if answers will be correct
+
                 if (input.value === correctAnswers[i]) {
-                        location.replace('range.html')
+                        
                 } else {
                         document.getElementById('header-text').innerHTML = 'Please, try again.'
                 }
@@ -30,6 +34,8 @@ let display = document.getElementById('wind-display')
 let fuel = 5
 let windOnFuel = document.getElementById('fuel-gauge')
 
+//need to tie all the parameters below by 'one rope, so that change in one, will affect the other
+
 function up(){
     if(wind === 30)return false
    console.log(display.innerHTML = ++ wind)
@@ -40,6 +46,7 @@ up()
 function down(){
     if(wind < 1)return false
     console.log(display.innerHTML = --wind)
+    console.log(windOnFuel.innerHTML = fuel --)
 }
 down()
 
