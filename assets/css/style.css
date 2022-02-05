@@ -29,4 +29,11 @@ body {
         line-height: 50px;
         font-size: smaller;
         border-radius: 10px;
+        font-weight: 300;
+    }
+    /*lets style the clock down below*/
+    #clock {
+        height: 50px;
+        background-color: black;
+        border: 2px solid #a87b32
     }
